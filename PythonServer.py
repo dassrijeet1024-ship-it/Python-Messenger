@@ -1,15 +1,5 @@
-import asyncio
 import socket
 import threading
-
-# Following is an asynchronous function, such functions can pause while waiting for a certain task to complete
-async def joke():
-    print("I need to get myself some updog.") # Executes as soon as function is called
-
-    await asyncio.sleep(2) # The following code block executes 5 seconds after the function is called
-    print("What's up dog!")
-
-asyncio.run(joke()) # Calling the asynchronous function
 
 HOST = 'localhost'
 PORT = 1250
@@ -39,9 +29,3 @@ while True:
 # Closes the connection
 conn.close()
 s.close()
-
-# One-way communication from Server to Client acheived
-
-# How to send text from Client to Server?
-
-# Fuck yeah I did it!
